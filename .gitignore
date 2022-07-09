@@ -107,3 +107,6 @@ venv.bak/
 robots/**
 **.bot
 test.py
+.idea
+.DS_Store
+.idea/*

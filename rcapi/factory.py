@@ -50,6 +50,7 @@ def make_search_body(search='', weapon=None, movement=None, maxCpu=10000, minCpu
     result['minimumCpu'] = minCpu
     result['maximumRobotRanking'] = maxRr
     result['minimumRobotRanking'] = minRr
+    result['order'] = 3
     if player is True:
         result['textSearchField'] = 1
     elif player is False:

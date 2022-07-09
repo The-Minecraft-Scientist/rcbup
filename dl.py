@@ -14,7 +14,7 @@ from multiprocessing import Process as Thread
 SLOWDOWN = 0.5  # prevent more than two requests per second
 CALLS_BEFORE_REFRESH = 4  # token expires every 60s or something
 
-def main(args):
+def dl(args):
     token = ''
     credentials = do_login(args)
     if credentials is None:
@@ -99,5 +99,5 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    main(args)
+    dl(args)
     print('Done.')
